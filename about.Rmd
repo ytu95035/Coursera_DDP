@@ -1,5 +1,9 @@
-This Shiny application is part of the Developing Data Products Coursera course project https://www.coursera.org/learn/data-products/.
+##This Shiny application is part of the Developing Data Products Coursera course project. 
 
-We predict an iris flower species using a prediction model trained on the 'iris' databset. https://en.wikipedia.org/wiki/Iris_flower_data_set
+https://www.coursera.org/learn/data-products/ 
 
-Submitted June 26, 2016.
+##The model is fitted through Diamonds Dataset from ggplot2 package by including 4C (carat, cut, color and clarity) variable.  And, the model is contributed by Solomon Messing.
+
+https://solomonmessing.wordpress.com/2014/01/19/visualization-series-the-scatterplot-or-how-to-use-data-so-you-dont-get-ripped-off/
+
+Submitted January 26, 2018.
