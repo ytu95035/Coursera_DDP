@@ -1,0 +1,54 @@
+---
+title: "Shiny Application for Diamond Price Prediction"
+author: "Yuling Tu"
+date: "January 27, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# Goal of the project
+
+- A Shiny application that has widget input, ui input in server.R, reactive output using server calculations, and supporting documentation.
+
+- A Reproducible Pitch Presentation that contains five slides in R Presentation that is pushed to and hosted on GitHub and contains embedded R code that runs.
+
+- All related souce codes are located at Github
+
+### https://github.com/ytu95035/Coursera_DDP
+
+# Diamond Data Set
+
+- Diamond data is from ggplot2 package
+- 53940 observations and 10 variables
+```{r data, echo=FALSE, comment=NA}
+suppressWarnings(suppressPackageStartupMessages(library(ggplot2)))
+data("diamonds")
+suppressMessages(head(diamonds, 5))
+```
+- Price & 4c (carat, cut, color and clarity) have positive linear regression relationship
+```{r, echo=FALSE, fig.width=16,fig.height=14}
+ggplot(diamonds, aes(x=carat, y=price, color=cut)) + geom_point() + facet_grid(color ~ clarity)
+```
+
+
+# Prediction Model
+
+As ggplot shows that 4C has positive linear regression with diamond price.  The following predition model is used to predict the price.
+
+## Model: lm(formula = I(log10(price)) ~ I(carat^(1/3)) + carat + cut + color + clarity, data = diamonds)
+
+The model is contributed by Solomon Messing 
+
+### https://solomonmessing.wordpress.com/2014/01/19/visualization-series-the-scatterplot-or-how-to-use-data-so-you-dont-get-ripped-off/
+
+The application provides the prediction model for you to predict the price by selecting specified 4c you want.
+
+## So, you won't get ripped off EVER!!
+
+
+
+
