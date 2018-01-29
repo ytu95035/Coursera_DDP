@@ -61,7 +61,8 @@ ggplot(diamonds, aes(x=carat, y=price, color=cut)) + geom_point() + facet_grid(c
 
 ## Check the price first here
 
-Due to my company's firewall, I can't publish Shiny app to R Server.  Please run the following command in your RStudio console to launch the applicaton.  Really appreciate for your patience.  
-
-### library(shiny)
+### please run the following command in your R Console. 
 ### runGitHub("Coursera_DDP", "ytu95035")  
+
+Due to my company's firewall, I can't publish Shiny app to R Server.  This is the workaround to launch the applicaton.  Really appreciate for your patience.  
+ 
