@@ -57,12 +57,14 @@ ggplot(diamonds, aes(x=carat, y=price, color=cut)) + geom_point() + facet_grid(c
 
 - The model is contributed by Solomon Messing (https://solomonmessing.wordpress.com/2014/01/19/visualization-series-the-scatterplot-or-how-to-use-data-so-you-dont-get-ripped-off/).
 
-### Are you ready to buy this diamond -- carat=2, cut='Very Good', color='G',clarity='VS2'?
-
-## Check the price first here
+## Are you ready to buy a diamond? Check the price first here 
 
 ### please run the following command in your R Console. 
-### runGitHub("Coursera_DDP", "ytu95035")  
+
+### library(shiny)
+### runGitHub("Coursera_DDP", "ytu95035") 
+
+#### "" has been changed to character by Rpres which is not recognized by R Console. Please retype double quote after you pass the comment to R Console. Thank you. 
 
 Due to my company's firewall, I can't publish Shiny app to R Server.  This is the workaround to launch the applicaton.  Really appreciate for your patience.  
  
